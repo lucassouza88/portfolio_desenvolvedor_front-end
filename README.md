@@ -12,7 +12,7 @@ Portfólio pessoal desenvolvido em **React** para reunir os projetos que criei d
 - **Sobre Mim** com foto, apresentação, localização, e-mail e redes sociais
 - **Projetos** em cards, com **filtro por tecnologia** e **modal de detalhes** (galeria de imagens navegável por clique ou setas do teclado, descrição, destaques técnicos e links)
 - **Habilidades** agrupadas por categoria, com nível de proficiência, e competências comportamentais
-- **Contato** com links para redes profissionais
+- **Contato** com e-mail e botão "Copiar e-mail", além dos links para redes profissionais
 - **Navegação** com menu fixo que destaca a seção visível e vira menu "hambúrguer" no mobile
 - **Responsivo** (mobile-first) e com **tema claro/escuro** automático conforme o sistema
 - **Acessibilidade**: HTML semântico, rótulos ARIA, foco visível, suporte a teclado e a `prefers-reduced-motion`
