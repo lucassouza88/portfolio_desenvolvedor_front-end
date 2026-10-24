@@ -12,7 +12,7 @@ Portfólio pessoal desenvolvido em **React** para reunir os projetos que criei d
 - **Sobre Mim** com foto, apresentação, localização, e-mail e redes sociais
 - **Projetos** em cards, com **filtro por tecnologia** e **modal de detalhes** (galeria de imagens navegável por clique ou setas do teclado, descrição, destaques técnicos e links)
 - **Habilidades** agrupadas por categoria, com nível de proficiência, e competências comportamentais
-- **Contato** com formulário validado e links para redes profissionais
+- **Contato** com links para redes profissionais
 - **Navegação** com menu fixo que destaca a seção visível e vira menu "hambúrguer" no mobile
 - **Responsivo** (mobile-first) e com **tema claro/escuro** automático conforme o sistema
 - **Acessibilidade**: HTML semântico, rótulos ARIA, foco visível, suporte a teclado e a `prefers-reduced-motion`
@@ -30,7 +30,6 @@ Portfólio pessoal desenvolvido em **React** para reunir os projetos que criei d
 src/
 ├── components/          # Componentes reutilizáveis (cada um com seu .module.css)
 │   ├── Button/          # Botão/link com variantes
-│   ├── FormField/       # Campo de formulário com rótulo e erro
 │   ├── Footer/
 │   ├── Header/          # Menu fixo e responsivo
 │   ├── Icon/            # Ícones SVG inline
@@ -42,7 +41,7 @@ src/
 │   └── Tag/             # Etiquetas de tecnologia
 ├── sections/            # Seções da página (Hero, About, Projects, Skills, Contact)
 ├── data/                # Conteúdo do portfólio (perfil, projetos, habilidades, menu)
-├── hooks/               # Hooks customizados (useActiveSection, useContactForm)
+├── hooks/               # Hook customizado useActiveSection (seção visível no menu)
 ├── styles/global.css    # Reset e tokens de design
 ├── App.jsx
 └── main.jsx
@@ -75,10 +74,6 @@ Outros comandos:
 | ----------------- | ------------------------------------------- |
 | `npm run build`   | Gera a versão de produção na pasta `dist/`  |
 | `npm run preview` | Serve localmente a versão gerada pelo build |
-
-### Formulário de contato (opcional)
-
-Por padrão, o formulário valida os campos e abre o cliente de e-mail do visitante com a mensagem preenchida. Para receber as mensagens diretamente, crie um formulário gratuito no [Formspree](https://formspree.io), copie `.env.example` para `.env` e preencha `VITE_FORMSPREE_ID`.
 
 ## 🌐 Deploy
 
