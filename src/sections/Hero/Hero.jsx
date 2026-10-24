@@ -9,7 +9,7 @@ export default function Hero() {
   const skillCount = skillGroups.reduce((sum, group) => sum + group.skills.length, 0);
 
   const stats = [
-    { value: projects.length, label: 'projetos em destaque' },
+    { value: projects.length, label: 'projetos na EBAC' },
     { value: skillCount, label: 'tecnologias' },
     { value: '100%', label: 'responsivo' },
   ];

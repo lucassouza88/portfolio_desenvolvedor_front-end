@@ -1,6 +1,6 @@
 # Portfólio — Desenvolvedor Front-end
 
-Portfólio pessoal desenvolvido em **React** para reunir meus principais projetos do curso, minhas habilidades e formas de contato.
+Portfólio pessoal desenvolvido em **React** para reunir os projetos que criei durante a formação em Desenvolvimento Front-end na **EBAC**, minhas habilidades e formas de contato.
 
 🔗 **Acesse online:** https://SEU-USUARIO.github.io/NOME-DO-REPO/ <!-- substitua pelo link do deploy -->
 
@@ -89,12 +89,20 @@ O projeto está configurado para publicar em qualquer uma destas plataformas:
 
 ## 📂 Projetos apresentados
 
+Todos os projetos foram desenvolvidos durante a formação em **Desenvolvimento Front-end na EBAC**.
+
 | Projeto | Descrição | Tecnologias |
 | ------- | --------- | ----------- |
-| **Lista de Tarefas** | Gerenciador de tarefas com criação, edição, filtros por status e persistência no `localStorage`. | HTML5, CSS3, JavaScript |
-| **App de Clima** | Consulta a previsão do tempo em uma API pública, com tratamento de carregamento e erros. | React, Vite, CSS Modules, API REST |
-| **Loja Virtual** | E-commerce com catálogo, detalhes do produto, carrinho com total e rotas; estado global via Context API. | React, React Router, Context API, Styled Components |
+| [**Micro Cardápio**](https://github.com/lucassouza88/Micro-Cardapio) | Sistema de pedidos de restaurante dividido em três micro frontends unidos com Module Federation. | Next.js, Module Federation, Webpack |
+| [**Blog com Next.js**](https://github.com/lucassouza88/blog-app-router) | Blog com páginas estáticas, rotas dinâmicas e metadata para SEO. [Ver online](https://blog-app-router-two.vercel.app) | Next.js, TypeScript, Vercel |
+| [**Lista de Tarefas com Next.js 15**](https://github.com/lucassouza88/lista-next) | Server e Client Components, hook personalizado e testes unitários. | Next.js, TypeScript, Tailwind CSS, Jest |
+| [**Pipeline de CI/CD**](https://github.com/lucassouza88/site-ci-cd) | Site com lint, testes, build e deploy automáticos via GitHub Actions. [Ver online](https://lucassouza88.github.io/site-ci-cd/) | Next.js, GitHub Actions, GitHub Pages |
+| [**Catálogo de Livros**](https://github.com/lucassouza88/catalogo-livros) | CRUD completo de livros consumindo uma API REST com Axios. | React, TypeScript, Vite, Axios |
+| [**Todo React Avançado**](https://github.com/lucassouza88/Todo-React-Avan-ado) | Tarefas com Context API, hooks customizados e memoização. | React, Context API, Vite |
+| [**Diário de Bordo (PWA)**](https://github.com/lucassouza88/Di-rio-de-Bordo) | Diário instalável que funciona offline com Service Worker. | PWA, JavaScript, HTML5, CSS3 |
+| [**Cadastro com Busca de CEP**](https://github.com/lucassouza88/cadastro-usuarios-cep) | Formulário que preenche o endereço automaticamente pela API ViaCEP. | JavaScript, API REST |
+| [**Agência Criativa Web**](https://github.com/lucassouza88/Ag-ncia-Criativa-Web---refatorado) | Site institucional responsivo com estilos organizados em SASS. | HTML5, SASS, CSS3 |
 
 ## 👤 Autor
 
-**Lucas de Paula Souza** — [LinkedIn](https://www.linkedin.com/in/seu-usuario) · [GitHub](https://github.com/seu-usuario) · lucasdepaulasouza23@gmail.com
+**Lucas de Paula Souza** — [LinkedIn](https://www.linkedin.com/in/seu-usuario) · [GitHub](https://github.com/lucassouza88) · lucasdepaulasouza23@gmail.com

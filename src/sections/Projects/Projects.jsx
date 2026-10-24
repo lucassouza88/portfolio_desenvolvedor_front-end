@@ -2,10 +2,14 @@ import { useCallback, useMemo, useState } from 'react';
 import Section from '../../components/Section/Section.jsx';
 import ProjectCard from '../../components/ProjectCard/ProjectCard.jsx';
 import ProjectModal from '../../components/ProjectModal/ProjectModal.jsx';
+import Button from '../../components/Button/Button.jsx';
+import Icon from '../../components/Icon/Icon.jsx';
 import { projects } from '../../data/projects.js';
+import { profile } from '../../data/profile.js';
 import styles from './Projects.module.css';
 
 const ALL = 'Todos';
+const githubUrl = profile.socials.find((social) => social.icon === 'github')?.url;
 
 /**
  * Seção "Projetos": grade de cards com filtro por tecnologia
@@ -31,9 +35,9 @@ export default function Projects() {
   return (
     <Section
       id="projetos"
-      eyebrow="Portfólio"
-      title="Projetos em destaque"
-      subtitle="Projetos desenvolvidos durante o curso, cada um explorando tecnologias e desafios diferentes. Clique em um card para ver os detalhes."
+      eyebrow="Formação EBAC"
+      title="Projetos desenvolvidos na EBAC"
+      subtitle="Projetos criados durante meus estudos de Desenvolvimento Front-end na EBAC, cada um explorando tecnologias e desafios diferentes. Clique em um card para ver os detalhes."
     >
       <div className={styles.filters} role="group" aria-label="Filtrar por tecnologia">
         {technologies.map((tech) => (
@@ -53,6 +57,12 @@ export default function Projects() {
         {visibleProjects.map((project) => (
           <ProjectCard key={project.id} project={project} onOpen={setSelected} />
         ))}
+      </div>
+
+      <div className={styles.more}>
+        <Button href={githubUrl} variant="secondary" external>
+          <Icon name="github" size={18} /> Ver todos os repositórios no GitHub
+        </Button>
       </div>
 
       {selected && <ProjectModal project={selected} onClose={closeModal} />}

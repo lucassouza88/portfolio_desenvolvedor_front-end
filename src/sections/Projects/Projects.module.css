@@ -41,6 +41,12 @@
   gap: 24px;
 }
 
+.more {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
 @media (min-width: 640px) {
   .filters {
     flex-wrap: wrap;

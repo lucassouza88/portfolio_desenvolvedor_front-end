@@ -1,62 +1,175 @@
 /**
- * Projetos exibidos na seção "Projetos".
+ * Projetos exibidos na seção "Projetos" — todos desenvolvidos durante
+ * a formação em Desenvolvimento Front-end na EBAC.
+ *
  * Para adicionar um projeto, basta incluir um novo objeto no array:
- * o componente ProjectCard e o modal de detalhes são gerados automaticamente.
+ * o ProjectCard, o filtro por tecnologia e o modal de detalhes são gerados automaticamente.
  * As imagens ficam em /public/images/projects.
  */
+const GITHUB = 'https://github.com/lucassouza88';
+
 export const projects = [
   {
-    id: 'lista-tarefas',
-    title: 'Lista de Tarefas',
-    summary: 'Gerenciador de tarefas com filtros e persistência no navegador.',
+    id: 'micro-cardapio',
+    title: 'Micro Cardápio',
+    summary: 'Sistema de pedidos de restaurante dividido em micro frontends.',
     description:
-      'Aplicação para criar, editar, concluir e excluir tarefas. As tarefas são salvas no localStorage, ' +
-      'permitindo que o usuário feche o navegador sem perder nada. Conta com filtros por status ' +
-      '(todas, pendentes e concluídas) e contador de itens restantes.',
+      'Sistema de pedidos dividido em três aplicações independentes — container, cardápio e pedido — ' +
+      'unidas em tempo de execução com Webpack Module Federation. Os micro frontends se comunicam por ' +
+      'eventos, e se um deles estiver fora do ar o container mostra um aviso só no lugar dele, sem ' +
+      'derrubar o restante da página.',
     highlights: [
-      'Manipulação do DOM com JavaScript puro',
-      'Persistência de dados com localStorage',
-      'Layout responsivo com Flexbox',
+      'Arquitetura de micro frontends com Module Federation',
+      'Comunicação entre aplicações via eventos customizados',
+      'Monorepo com npm workspaces e hooks customizados (usePedido, useResumoPedido)',
     ],
-    technologies: ['HTML5', 'CSS3', 'JavaScript'],
-    images: ['images/projects/tarefas-1.svg', 'images/projects/tarefas-2.svg'],
-    repoUrl: 'https://github.com/seu-usuario/lista-de-tarefas',
+    technologies: ['Next.js', 'Module Federation', 'Webpack', 'JavaScript'],
+    images: ['images/projects/micro-cardapio-1.svg', 'images/projects/micro-cardapio-2.svg'],
+    repoUrl: `${GITHUB}/Micro-Cardapio`,
     demoUrl: '',
   },
   {
-    id: 'app-clima',
-    title: 'App de Clima',
-    summary: 'Previsão do tempo em tempo real consumindo uma API pública.',
+    id: 'blog-next',
+    title: 'Blog com Next.js',
+    summary: 'Blog com páginas estáticas, rotas dinâmicas e SEO, publicado na Vercel.',
     description:
-      'Aplicação React que consulta a API OpenWeather para exibir temperatura, umidade, vento ' +
-      'e a previsão dos próximos dias da cidade pesquisada. Trata estados de carregamento e erro ' +
-      'e lembra a última cidade buscada.',
+      'Blog construído com o App Router do Next.js. A home lista os artigos em cards e cada artigo tem ' +
+      'sua própria página estática gerada no build, com metadata dinâmica para SEO. Em uma segunda ' +
+      'versão, o projeto passou por um estudo de performance: medir, diagnosticar, otimizar e comparar.',
     highlights: [
-      'Consumo de API REST com fetch e async/await',
-      'Hooks useState, useEffect e hook customizado useWeather',
-      'Tratamento de loading e erros',
+      'Rotas dinâmicas (/artigos/[slug]) com geração estática',
+      'Metadata dinâmica para SEO',
+      'Deploy contínuo na Vercel e relatórios de performance',
     ],
-    technologies: ['React', 'Vite', 'CSS Modules', 'API REST'],
-    images: ['images/projects/clima-1.svg', 'images/projects/clima-2.svg'],
-    repoUrl: 'https://github.com/seu-usuario/app-clima',
+    technologies: ['Next.js', 'TypeScript', 'App Router', 'Vercel'],
+    images: ['images/projects/blog-next-1.svg', 'images/projects/blog-next-2.svg'],
+    repoUrl: `${GITHUB}/blog-app-router`,
+    demoUrl: 'https://blog-app-router-two.vercel.app',
+  },
+  {
+    id: 'lista-next',
+    title: 'Lista de Tarefas com Next.js 15',
+    summary: 'Lista de tarefas com Server e Client Components e testes automatizados.',
+    description:
+      'Aplicação de tarefas feita para praticar a divisão entre componentes de servidor e de cliente ' +
+      'no App Router do Next.js 15. Conta com um hook personalizado para contar as tarefas e uma suíte ' +
+      'de testes unitários cobrindo componentes, página e hook.',
+    highlights: [
+      'Server Components e Client Components',
+      'Hook personalizado useContadorDeTarefas',
+      'Testes unitários com Jest e Testing Library',
+    ],
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Jest'],
+    images: ['images/projects/lista-next-1.svg', 'images/projects/lista-next-2.svg'],
+    repoUrl: `${GITHUB}/lista-next`,
     demoUrl: '',
   },
   {
-    id: 'loja-virtual',
-    title: 'Loja Virtual',
-    summary: 'E-commerce com catálogo, carrinho e rotas.',
+    id: 'site-ci-cd',
+    title: 'Pipeline de CI/CD',
+    summary: 'Site Next.js com integração e entrega contínuas no GitHub Actions.',
     description:
-      'Front-end de uma loja virtual com listagem de produtos, página de detalhes, carrinho de ' +
-      'compras com cálculo de total e navegação entre páginas. O estado do carrinho é compartilhado ' +
-      'entre componentes através da Context API.',
+      'Projeto criado para demonstrar um pipeline completo de Integração Contínua (CI) e Entrega ' +
+      'Contínua (CD). A cada push, o GitHub Actions instala as dependências, roda lint e testes, ' +
+      'gera o build de produção e publica o site automaticamente no GitHub Pages.',
     highlights: [
-      'Roteamento com React Router',
+      'Workflow do GitHub Actions com lint, testes e build',
+      'Deploy automático no GitHub Pages',
+      'Exportação estática do Next.js',
+    ],
+    technologies: ['Next.js', 'TypeScript', 'GitHub Actions', 'GitHub Pages'],
+    images: ['images/projects/site-ci-cd-1.svg', 'images/projects/site-ci-cd-2.svg'],
+    repoUrl: `${GITHUB}/site-ci-cd`,
+    demoUrl: 'https://lucassouza88.github.io/site-ci-cd/',
+  },
+  {
+    id: 'catalogo-livros',
+    title: 'Catálogo de Livros',
+    summary: 'CRUD de livros em React com TypeScript consumindo uma API REST.',
+    description:
+      'Catálogo onde é possível cadastrar, listar, editar e remover livros. Todas as operações são ' +
+      'feitas em uma API REST com Axios (GET, POST, PUT e DELETE), com uma camada de serviços ' +
+      'separada dos componentes e tipagem dos dados com TypeScript.',
+    highlights: [
+      'CRUD completo com Axios (GET, POST, PUT, DELETE)',
+      'Camada de serviços isolada (services/api.ts)',
+      'Tipagem com TypeScript e componentes reutilizáveis',
+    ],
+    technologies: ['React', 'TypeScript', 'Vite', 'Axios', 'API REST'],
+    images: ['images/projects/catalogo-livros-1.svg', 'images/projects/catalogo-livros-2.svg'],
+    repoUrl: `${GITHUB}/catalogo-livros`,
+    demoUrl: '',
+  },
+  {
+    id: 'todo-react',
+    title: 'Todo React Avançado',
+    summary: 'Gerenciador de tarefas com estado global e otimização de renderização.',
+    description:
+      'Lista de tarefas que explora recursos avançados do React: estado global com Context API, ' +
+      'hooks customizados para formulários e persistência no localStorage, filtros por status e ' +
+      'memoização para evitar renderizações desnecessárias.',
+    highlights: [
       'Estado global com Context API',
-      'Estilização com Styled Components',
+      'Hooks customizados useInput e useLocalStorage',
+      'Otimização com useMemo e React.memo',
     ],
-    technologies: ['React', 'React Router', 'Context API', 'Styled Components'],
-    images: ['images/projects/loja-1.svg', 'images/projects/loja-2.svg'],
-    repoUrl: 'https://github.com/seu-usuario/loja-virtual',
+    technologies: ['React', 'Vite', 'Context API', 'JavaScript'],
+    images: ['images/projects/todo-react-1.svg', 'images/projects/todo-react-2.svg'],
+    repoUrl: `${GITHUB}/Todo-React-Avan-ado`,
+    demoUrl: '',
+  },
+  {
+    id: 'diario-bordo',
+    title: 'Diário de Bordo (PWA)',
+    summary: 'Diário instalável que funciona offline.',
+    description:
+      'Progressive Web App para registrar anotações com título e texto. Os registros ficam salvos no ' +
+      'localStorage, o Service Worker faz cache dos arquivos para uso offline e o app pode ser ' +
+      'instalado no celular ou no computador por um botão próprio.',
+    highlights: [
+      'Service Worker com cache para funcionamento offline',
+      'Web App Manifest e botão de instalação',
+      'Persistência dos registros com localStorage',
+    ],
+    technologies: ['PWA', 'Service Worker', 'JavaScript', 'HTML5', 'CSS3'],
+    images: ['images/projects/diario-bordo-1.svg', 'images/projects/diario-bordo-2.svg'],
+    repoUrl: `${GITHUB}/Di-rio-de-Bordo`,
+    demoUrl: '',
+  },
+  {
+    id: 'cadastro-cep',
+    title: 'Cadastro com Busca de CEP',
+    summary: 'Formulário que preenche o endereço automaticamente pelo CEP.',
+    description:
+      'Formulário de cadastro de usuários que, ao informar o CEP, consulta a API pública ViaCEP e ' +
+      'preenche logradouro, bairro, cidade e estado automaticamente, tratando CEPs inválidos ou ' +
+      'inexistentes.',
+    highlights: [
+      'Consumo da API ViaCEP com fetch e async/await',
+      'Preenchimento automático de campos do formulário',
+      'Tratamento de erros para CEP não encontrado',
+    ],
+    technologies: ['JavaScript', 'API REST', 'HTML5', 'CSS3'],
+    images: ['images/projects/cadastro-cep-1.svg', 'images/projects/cadastro-cep-2.svg'],
+    repoUrl: `${GITHUB}/cadastro-usuarios-cep`,
+    demoUrl: '',
+  },
+  {
+    id: 'agencia-criativa',
+    title: 'Agência Criativa Web',
+    summary: 'Site institucional responsivo com estilos organizados em SASS.',
+    description:
+      'Site de uma agência de design digital com seções de apresentação, sobre, serviços, depoimentos ' +
+      'e contato. Na versão refatorada, os estilos foram reorganizados em SASS com variáveis, mixins ' +
+      'e parciais separados por responsabilidade.',
+    highlights: [
+      'SASS com variáveis, mixins e parciais',
+      'Layout responsivo com Flexbox, Grid e unidades relativas',
+      'HTML semântico dividido em seções',
+    ],
+    technologies: ['HTML5', 'SASS', 'CSS3'],
+    images: ['images/projects/agencia-criativa-1.svg', 'images/projects/agencia-criativa-2.svg'],
+    repoUrl: `${GITHUB}/Ag-ncia-Criativa-Web---refatorado`,
     demoUrl: '',
   },
 ];
