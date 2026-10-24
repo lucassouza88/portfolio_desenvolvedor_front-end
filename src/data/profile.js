@@ -19,7 +19,5 @@ export const profile = {
   ],
   socials: [
     { label: 'GitHub', url: 'https://github.com/lucassouza88', icon: 'github' },
-    { label: 'LinkedIn', url: 'https://www.linkedin.com/in/seu-usuario', icon: 'linkedin' },
-    { label: 'E-mail', url: 'mailto:lucasdepaulasouza23@gmail.com', icon: 'mail' },
   ],
 };

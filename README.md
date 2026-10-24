@@ -105,4 +105,4 @@ Todos os projetos foram desenvolvidos durante a formação em **Desenvolvimento 
 
 ## 👤 Autor
 
-**Lucas de Paula Souza** — [LinkedIn](https://www.linkedin.com/in/seu-usuario) · [GitHub](https://github.com/lucassouza88) · lucasdepaulasouza23@gmail.com
+**Lucas de Paula Souza** — [GitHub](https://github.com/lucassouza88) · lucasdepaulasouza23@gmail.com
