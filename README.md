@@ -14,7 +14,7 @@ Portfólio pessoal desenvolvido em **React** para reunir os projetos que criei d
 - **Habilidades** agrupadas por categoria e competências comportamentais
 - **Contato** com e-mail, botão "Copiar e-mail" e link para redes profissionais
 - **Navegação** com menu fixo que vira menu "hambúrguer" no mobile
-- **Responsivo** para celular e desktop, com **tema claro/escuro** automático conforme o sistema
+- **Responsivo** para celular e desktop, com **tema escuro**
 
 ## 🛠️ Tecnologias
 
