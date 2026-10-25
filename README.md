@@ -11,7 +11,7 @@ Portfólio pessoal desenvolvido em **React** para reunir os projetos que criei d
 - **Página inicial** com resumo profissional e atalhos para as seções
 - **Sobre Mim** com foto, apresentação, localização, e-mail e redes sociais
 - **Projetos** em cards, com **filtro por tecnologia** e **modal de detalhes** (galeria de imagens navegável por clique ou setas do teclado, descrição, destaques técnicos e links)
-- **Habilidades** agrupadas por categoria, com nível de proficiência, e competências comportamentais
+- **Habilidades** agrupadas por categoria e competências comportamentais
 - **Contato** com e-mail e botão "Copiar e-mail", além dos links para redes profissionais
 - **Navegação** com menu fixo que destaca a seção visível e vira menu "hambúrguer" no mobile
 - **Responsivo** (mobile-first) e com **tema claro/escuro** automático conforme o sistema
@@ -36,7 +36,6 @@ src/
 │   ├── ProjectCard/     # Card de resumo do projeto
 │   ├── ProjectModal/    # Detalhes do projeto com galeria
 │   ├── Section/         # Wrapper padrão das seções (título, container)
-│   ├── SkillBar/        # Habilidade com barra de nível
 │   ├── SocialLinks/     # Links de redes sociais
 │   └── Tag/             # Etiquetas de tecnologia
 ├── sections/            # Seções da página (Hero, About, Projects, Skills, Contact)

@@ -1,5 +1,4 @@
 import Section from '../../components/Section/Section.jsx';
-import SkillBar from '../../components/SkillBar/SkillBar.jsx';
 import { TagList } from '../../components/Tag/Tag.jsx';
 import { skillGroups, softSkills } from '../../data/skills.js';
 import styles from './Skills.module.css';
@@ -11,18 +10,14 @@ export default function Skills() {
       id="habilidades"
       eyebrow="Habilidades"
       title="Tecnologias e competências"
-      subtitle="Ferramentas que utilizei nos projetos do curso e no meu dia a dia de estudos."
+      subtitle="Tecnologias que utilizei nos projetos da EBAC e nos meus estudos."
       alt
     >
       <div className={styles.grid}>
         {skillGroups.map((group) => (
           <article key={group.title} className={styles.card}>
             <h3 className={styles.cardTitle}>{group.title}</h3>
-            <ul className={styles.list}>
-              {group.skills.map((skill) => (
-                <SkillBar key={skill.name} name={skill.name} level={skill.level} />
-              ))}
-            </ul>
+            <TagList items={group.skills} />
           </article>
         ))}
       </div>

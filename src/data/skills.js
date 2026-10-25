@@ -1,38 +1,31 @@
-/**
- * Habilidades agrupadas por categoria.
- * `level` vai de 1 a 5 e é usado para desenhar a barra de proficiência.
- */
+/** Tecnologias agrupadas por categoria, exibidas como etiquetas. */
 export const skillGroups = [
   {
     title: 'Front-end',
     skills: [
-      { name: 'HTML5 e CSS3', level: 5 },
-      { name: 'JavaScript (ES6+)', level: 4 },
-      { name: 'TypeScript', level: 3 },
-      { name: 'React', level: 4 },
-      { name: 'Next.js (App Router)', level: 3 },
-      { name: 'Consumo de APIs REST', level: 4 },
+      'HTML5',
+      'CSS3',
+      'JavaScript (ES6+)',
+      'TypeScript',
+      'React',
+      'Next.js (App Router)',
+      'Consumo de APIs REST',
     ],
   },
   {
     title: 'Estilização',
-    skills: [
-      { name: 'Flexbox e Grid', level: 4 },
-      { name: 'SASS', level: 4 },
-      { name: 'Tailwind CSS', level: 3 },
-      { name: 'Bootstrap', level: 3 },
-      { name: 'CSS Modules', level: 4 },
-    ],
+    skills: ['Flexbox e Grid', 'SASS', 'Tailwind CSS', 'Bootstrap', 'CSS Modules', 'Responsividade'],
   },
   {
     title: 'Ferramentas e práticas',
     skills: [
-      { name: 'Git e GitHub', level: 4 },
-      { name: 'GitHub Actions (CI/CD)', level: 3 },
-      { name: 'Testes com Jest', level: 3 },
-      { name: 'PWA e Service Workers', level: 3 },
-      { name: 'Micro frontends', level: 2 },
-      { name: 'Vite, Vercel e GitHub Pages', level: 4 },
+      'Git e GitHub',
+      'GitHub Actions (CI/CD)',
+      'Testes com Jest',
+      'PWA e Service Workers',
+      'Micro frontends',
+      'Vite',
+      'Vercel e GitHub Pages',
     ],
   },
 ];
