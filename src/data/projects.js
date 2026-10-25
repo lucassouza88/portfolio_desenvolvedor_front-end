@@ -70,12 +70,13 @@ export const projects = [
     summary: 'Site Next.js com integração e entrega contínuas no GitHub Actions.',
     description:
       'Projeto criado para demonstrar um pipeline completo de Integração Contínua (CI) e Entrega ' +
-      'Contínua (CD). A cada push, o GitHub Actions instala as dependências, roda lint e testes, ' +
-      'gera o build de produção e publica o site automaticamente no GitHub Pages.',
+      'Contínua (CD). A cada push, um workflow de CI no GitHub Actions instala as dependências, ' +
+      'roda o lint e gera o build; outro workflow exporta o site estático e publica ' +
+      'automaticamente no GitHub Pages.',
     highlights: [
-      'Workflow do GitHub Actions com lint, testes e build',
-      'Deploy automático no GitHub Pages',
-      'Exportação estática do Next.js',
+      'Workflow de CI no GitHub Actions com lint e build',
+      'Workflow de CD com deploy automático no GitHub Pages',
+      'Exportação estática do Next.js (output: export)',
     ],
     technologies: ['Next.js', 'TypeScript', 'GitHub Actions', 'GitHub Pages'],
     images: ['images/projects/site-ci-cd-1.svg', 'images/projects/site-ci-cd-2.svg'],

@@ -91,7 +91,7 @@ Todos os projetos foram desenvolvidos durante a formação em **Desenvolvimento 
 | [**Micro Cardápio**](https://github.com/lucassouza88/Micro-Cardapio) | Sistema de pedidos de restaurante dividido em três micro frontends unidos com Module Federation. | Next.js, Module Federation, Webpack |
 | [**Blog com Next.js**](https://github.com/lucassouza88/blog-app-router) | Blog com páginas estáticas, rotas dinâmicas e metadata para SEO. [Ver online](https://blog-app-router-two.vercel.app) | Next.js, TypeScript, Vercel |
 | [**Lista de Tarefas com Next.js 15**](https://github.com/lucassouza88/lista-next) | Server e Client Components, hook personalizado e testes unitários. | Next.js, TypeScript, Tailwind CSS, Jest |
-| [**Pipeline de CI/CD**](https://github.com/lucassouza88/site-ci-cd) | Site com lint, testes, build e deploy automáticos via GitHub Actions. [Ver online](https://lucassouza88.github.io/site-ci-cd/) | Next.js, GitHub Actions, GitHub Pages |
+| [**Pipeline de CI/CD**](https://github.com/lucassouza88/site-ci-cd) | Site com lint, build e deploy automáticos via GitHub Actions. [Ver online](https://lucassouza88.github.io/site-ci-cd/) | Next.js, GitHub Actions, GitHub Pages |
 | [**Catálogo de Livros**](https://github.com/lucassouza88/catalogo-livros) | CRUD completo de livros consumindo uma API REST com Axios. | React, TypeScript, Vite, Axios |
 | [**Todo React Avançado**](https://github.com/lucassouza88/Todo-React-Avan-ado) | Tarefas com Context API, hooks customizados e memoização. | React, Context API, Vite |
 | [**Diário de Bordo (PWA)**](https://github.com/lucassouza88/Di-rio-de-Bordo) | Diário instalável que funciona offline com Service Worker. | PWA, JavaScript, HTML5, CSS3 |
