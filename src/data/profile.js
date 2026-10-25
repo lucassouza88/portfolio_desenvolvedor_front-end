@@ -9,7 +9,6 @@ export const profile = {
   location: 'Brasil',
   email: 'lucasdepaulasouza23@gmail.com',
   photo: 'images/avatar.svg',
-  resumeUrl: '', // opcional: link para o currículo em PDF
   summary:
     'Desenvolvedor front-end focado em criar interfaces acessíveis, responsivas e bem componentizadas com React.',
   about: [

@@ -3,7 +3,7 @@ import styles from './Button.module.css';
 /**
  * Botão reutilizável. Renderiza <a> quando recebe `href` e <button> caso contrário.
  *
- * @param {'primary' | 'secondary' | 'ghost'} variant - estilo visual
+ * @param {'primary' | 'secondary'} variant - estilo visual
  * @param {boolean} external - abre o link em nova aba com rel seguro
  */
 export default function Button({

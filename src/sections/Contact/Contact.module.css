@@ -1,7 +1,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
   padding: 24px;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
@@ -10,42 +10,16 @@
 
 .email {
   display: flex;
-  flex-direction: column;
-  gap: 6px;
-  min-width: 0;
-}
-
-.label {
-  display: inline-flex;
   align-items: center;
-  gap: 8px;
-  color: var(--color-text-muted);
-  font-size: 0.9rem;
-  font-weight: 600;
+  gap: 10px;
+  color: var(--color-primary);
 }
 
 .address {
-  font-size: clamp(1.05rem, 4vw, 1.5rem);
+  color: var(--color-text);
+  font-size: clamp(1.05rem, 4vw, 1.4rem);
   font-weight: 700;
   overflow-wrap: anywhere;
-  user-select: all;
-}
-
-.actions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px;
-}
-
-/* Texto lido apenas por leitores de tela */
-.srOnly {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
 }
 
 @media (min-width: 768px) {

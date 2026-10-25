@@ -1,71 +1,28 @@
-import { useCallback, useMemo, useState } from 'react';
+import { useState } from 'react';
 import Section from '../../components/Section/Section.jsx';
 import ProjectCard from '../../components/ProjectCard/ProjectCard.jsx';
 import ProjectModal from '../../components/ProjectModal/ProjectModal.jsx';
-import Button from '../../components/Button/Button.jsx';
-import Icon from '../../components/Icon/Icon.jsx';
 import { projects } from '../../data/projects.js';
-import { profile } from '../../data/profile.js';
 import styles from './Projects.module.css';
 
-const ALL = 'Todos';
-const githubUrl = profile.socials.find((social) => social.icon === 'github')?.url;
-
-/**
- * Seção "Projetos": grade de cards com filtro por tecnologia
- * e modal de detalhes ao clicar em um projeto.
- */
+/** Seção "Projetos": grade de cards e modal de detalhes ao clicar em um projeto. */
 export default function Projects() {
-  const [filter, setFilter] = useState(ALL);
   const [selected, setSelected] = useState(null);
-
-  // Lista única de tecnologias, usada para montar os botões de filtro.
-  const technologies = useMemo(
-    () => [ALL, ...new Set(projects.flatMap((project) => project.technologies))],
-    [],
-  );
-
-  const visibleProjects =
-    filter === ALL ? projects : projects.filter((p) => p.technologies.includes(filter));
-
-  // useCallback mantém a mesma referência entre renders, evitando
-  // que o efeito do modal seja refeito sem necessidade.
-  const closeModal = useCallback(() => setSelected(null), []);
 
   return (
     <Section
       id="projetos"
       eyebrow="Formação EBAC"
       title="Projetos desenvolvidos na EBAC"
-      subtitle="Projetos criados durante meus estudos de Desenvolvimento Front-end na EBAC, cada um explorando tecnologias e desafios diferentes. Clique em um card para ver os detalhes."
+      subtitle="Projetos criados durante meus estudos de Desenvolvimento Front-end na EBAC. Clique em um card para ver os detalhes."
     >
-      <div className={styles.filters} role="group" aria-label="Filtrar por tecnologia">
-        {technologies.map((tech) => (
-          <button
-            key={tech}
-            type="button"
-            className={`${styles.filter} ${filter === tech ? styles.filterActive : ''}`}
-            aria-pressed={filter === tech}
-            onClick={() => setFilter(tech)}
-          >
-            {tech}
-          </button>
-        ))}
-      </div>
-
       <div className={styles.grid}>
-        {visibleProjects.map((project) => (
+        {projects.map((project) => (
           <ProjectCard key={project.id} project={project} onOpen={setSelected} />
         ))}
       </div>
 
-      <div className={styles.more}>
-        <Button href={githubUrl} variant="secondary" external>
-          <Icon name="github" size={18} /> Ver todos os repositórios no GitHub
-        </Button>
-      </div>
-
-      {selected && <ProjectModal project={selected} onClose={closeModal} />}
+      {selected && <ProjectModal project={selected} onClose={() => setSelected(null)} />}
     </Section>
   );
 }

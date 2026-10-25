@@ -6,7 +6,6 @@
   place-items: center;
   padding: 16px;
   background: rgb(8 10 20 / 0.7);
-  animation: fadeIn 0.2s ease-out;
 }
 
 .dialog {
@@ -17,24 +16,26 @@
   overflow-y: auto;
   border-radius: var(--radius-lg);
   background: var(--color-surface);
-  box-shadow: var(--shadow-md);
-  animation: slideUp 0.25s ease-out;
 }
 
-.close {
+.close,
+.nav {
   position: absolute;
-  top: 12px;
-  right: 12px;
   z-index: 2;
   display: grid;
   place-items: center;
-  width: 44px;
-  height: 44px;
   border: 0;
   border-radius: 50%;
   background: var(--color-surface);
   box-shadow: var(--shadow-sm);
   cursor: pointer;
+}
+
+.close {
+  top: 12px;
+  right: 12px;
+  width: 44px;
+  height: 44px;
 }
 
 .gallery {
@@ -50,18 +51,10 @@
 }
 
 .nav {
-  position: absolute;
   top: 50%;
-  display: grid;
-  place-items: center;
   width: 40px;
   height: 40px;
-  border: 0;
-  border-radius: 50%;
-  background: var(--color-surface);
-  box-shadow: var(--shadow-sm);
   transform: translateY(-50%);
-  cursor: pointer;
 }
 
 .prev {
@@ -70,29 +63,6 @@
 
 .next {
   right: 12px;
-}
-
-.dots {
-  position: absolute;
-  bottom: 12px;
-  left: 50%;
-  display: flex;
-  gap: 8px;
-  transform: translateX(-50%);
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  padding: 0;
-  border: 2px solid var(--color-surface);
-  border-radius: 50%;
-  background: transparent;
-  cursor: pointer;
-}
-
-.dotActive {
-  background: var(--color-surface);
 }
 
 .content {
@@ -107,7 +77,8 @@
   font-weight: 800;
 }
 
-.description {
+.description,
+.highlights {
   color: var(--color-text-muted);
 }
 
@@ -119,35 +90,10 @@
 .highlights {
   margin: 0;
   padding-left: 20px;
-  color: var(--color-text-muted);
-}
-
-.highlights li + li {
-  margin-top: 4px;
 }
 
 .actions {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  padding-top: 8px;
-}
-
-@media (min-width: 768px) {
-  .content {
-    padding: 32px;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-}
-
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(16px);
-  }
 }

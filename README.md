@@ -2,7 +2,7 @@
 
 Portfólio pessoal desenvolvido em **React** para reunir os projetos que criei durante a formação em Desenvolvimento Front-end na **EBAC**, minhas habilidades e formas de contato.
 
-🔗 **Acesse online:** https://SEU-USUARIO.github.io/NOME-DO-REPO/ <!-- substitua pelo link do deploy -->
+🔗 **Acesse online:** https://SEU-SITE.netlify.app <!-- substitua pelo link do deploy -->
 
 ---
 
@@ -10,16 +10,15 @@ Portfólio pessoal desenvolvido em **React** para reunir os projetos que criei d
 
 - **Página inicial** com resumo profissional e atalhos para as seções
 - **Sobre Mim** com foto, apresentação, localização, e-mail e redes sociais
-- **Projetos** em cards, com **filtro por tecnologia** e **modal de detalhes** (galeria de imagens navegável por clique ou setas do teclado, descrição, destaques técnicos e links)
+- **Projetos** em cards, com **modal de detalhes** (imagens, descrição, tecnologias, destaques técnicos e links)
 - **Habilidades** agrupadas por categoria e competências comportamentais
-- **Contato** com e-mail e botão "Copiar e-mail", além dos links para redes profissionais
-- **Navegação** com menu fixo que destaca a seção visível e vira menu "hambúrguer" no mobile
-- **Responsivo** (mobile-first) e com **tema claro/escuro** automático conforme o sistema
-- **Acessibilidade**: HTML semântico, rótulos ARIA, foco visível, suporte a teclado e a `prefers-reduced-motion`
+- **Contato** com e-mail e link para redes profissionais
+- **Navegação** com menu fixo que vira menu "hambúrguer" no mobile
+- **Responsivo** para celular e desktop
 
 ## 🛠️ Tecnologias
 
-- [React 18](https://react.dev/) — componentes funcionais, props e hooks (`useState`, `useEffect`, `useMemo`, `useCallback`, `useRef`) e hooks customizados
+- [React 18](https://react.dev/) — componentes funcionais, props e o hook `useState`
 - [Vite](https://vitejs.dev/) — ambiente de desenvolvimento e build
 - **CSS Modules** — estilização modular, com escopo por componente
 - **CSS Custom Properties** — tokens de design (cores, espaçamentos, raios) compartilhados
@@ -30,24 +29,22 @@ Portfólio pessoal desenvolvido em **React** para reunir os projetos que criei d
 src/
 ├── components/          # Componentes reutilizáveis (cada um com seu .module.css)
 │   ├── Button/          # Botão/link com variantes
-│   ├── Footer/
 │   ├── Header/          # Menu fixo e responsivo
 │   ├── Icon/            # Ícones SVG inline
 │   ├── ProjectCard/     # Card de resumo do projeto
-│   ├── ProjectModal/    # Detalhes do projeto com galeria
+│   ├── ProjectModal/    # Detalhes do projeto com imagens
 │   ├── Section/         # Wrapper padrão das seções (título, container)
 │   ├── SocialLinks/     # Links de redes sociais
 │   └── Tag/             # Etiquetas de tecnologia
 ├── sections/            # Seções da página (Hero, About, Projects, Skills, Contact)
 ├── data/                # Conteúdo do portfólio (perfil, projetos, habilidades, menu)
-├── hooks/               # Hook customizado useActiveSection (seção visível no menu)
 ├── styles/global.css    # Reset e tokens de design
 ├── App.jsx
 └── main.jsx
 public/images/           # Foto e capturas de tela dos projetos
 ```
 
-Todo o **conteúdo** fica em `src/data/`, separado da **apresentação** (componentes). Para atualizar o portfólio, basta editar esses arquivos — por exemplo, adicionar um objeto em `projects.js` cria automaticamente um novo card, filtro e modal.
+Todo o **conteúdo** fica em `src/data/`, separado da **apresentação** (componentes). Para atualizar o portfólio, basta editar esses arquivos — por exemplo, adicionar um objeto em `projects.js` cria automaticamente um novo card e o seu modal de detalhes.
 
 ## 🚀 Como rodar localmente
 
@@ -76,10 +73,12 @@ Outros comandos:
 
 ## 🌐 Deploy
 
-O projeto está configurado para publicar em qualquer uma destas plataformas:
+O portfólio está publicado no **Netlify**. Para publicar uma nova versão:
 
-- **GitHub Pages** (já configurado): o workflow em `.github/workflows/deploy.yml` publica automaticamente a cada push na `main`. Basta ativar em *Settings → Pages → Source: GitHub Actions*.
-- **Vercel / Netlify**: importe o repositório; o framework (Vite) é detectado automaticamente. Comando de build `npm run build`, pasta de saída `dist`.
+1. Rode `npm run build` (gera a pasta `dist/`).
+2. Acesse [app.netlify.com/drop](https://app.netlify.com/drop) e arraste a pasta `dist`.
+
+Também é possível importar o repositório no Netlify ou na Vercel, usando o comando de build `npm run build` e a pasta de saída `dist`.
 
 ## 📂 Projetos apresentados
 

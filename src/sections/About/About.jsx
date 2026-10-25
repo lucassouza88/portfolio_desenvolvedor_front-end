@@ -1,6 +1,5 @@
 import Section from '../../components/Section/Section.jsx';
 import SocialLinks from '../../components/SocialLinks/SocialLinks.jsx';
-import Button from '../../components/Button/Button.jsx';
 import Icon from '../../components/Icon/Icon.jsx';
 import { profile } from '../../data/profile.js';
 import styles from './About.module.css';
@@ -30,12 +29,6 @@ export default function About() {
           </ul>
 
           <SocialLinks links={profile.socials} />
-
-          {profile.resumeUrl && (
-            <Button href={profile.resumeUrl} variant="secondary" external>
-              Baixar currículo
-            </Button>
-          )}
         </div>
       </div>
     </Section>

@@ -46,9 +46,3 @@
   border-color: var(--color-primary);
   color: var(--color-primary);
 }
-
-.ghost {
-  background: transparent;
-  color: var(--color-primary);
-  padding-inline: 8px;
-}
