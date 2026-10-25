@@ -2,7 +2,7 @@
 
 Portfólio pessoal desenvolvido em **React** para reunir os projetos que criei durante a formação em Desenvolvimento Front-end na **EBAC**, minhas habilidades e formas de contato.
 
-🔗 **Acesse online:** https://SEU-SITE.netlify.app <!-- substitua pelo link do deploy -->
+🔗 **Acesse online:** [meek-liger-ee53e2.netlify.app](https://meek-liger-ee53e2.netlify.app)
 
 ---
 
