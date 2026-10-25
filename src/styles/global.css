@@ -25,6 +25,24 @@
   color-scheme: light;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0e1120;
+    --color-surface: #161a2e;
+    --color-surface-alt: #1d2238;
+    --color-text: #eceefa;
+    --color-text-muted: #a2a8c3;
+    --color-border: #2a3050;
+    --color-primary: #8b85ff;
+    --color-primary-strong: #a5a0ff;
+    --color-primary-soft: #26254a;
+    --color-on-primary: #0e1120;
+    --shadow-sm: 0 1px 3px rgb(0 0 0 / 0.4);
+    --shadow-md: 0 10px 30px rgb(0 0 0 / 0.45);
+    color-scheme: dark;
+  }
+}
+
 @media (min-width: 768px) {
   :root {
     --gutter: 32px;

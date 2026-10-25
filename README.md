@@ -10,15 +10,15 @@ Portfólio pessoal desenvolvido em **React** para reunir os projetos que criei d
 
 - **Página inicial** com resumo profissional e atalhos para as seções
 - **Sobre Mim** com foto, apresentação, localização, e-mail e redes sociais
-- **Projetos** em cards, com **modal de detalhes** (imagens, descrição, tecnologias, destaques técnicos e links)
+- **Projetos** em cards, com **filtro por tecnologia** e **modal de detalhes** (imagens, descrição, tecnologias, destaques técnicos e links)
 - **Habilidades** agrupadas por categoria e competências comportamentais
-- **Contato** com e-mail e link para redes profissionais
+- **Contato** com e-mail, botão "Copiar e-mail" e link para redes profissionais
 - **Navegação** com menu fixo que vira menu "hambúrguer" no mobile
-- **Responsivo** para celular e desktop
+- **Responsivo** para celular e desktop, com **tema claro/escuro** automático conforme o sistema
 
 ## 🛠️ Tecnologias
 
-- [React 18](https://react.dev/) — componentes funcionais, props e o hook `useState`
+- [React 18](https://react.dev/) — componentes funcionais, props e hooks (`useState`, `useEffect`, `useMemo`)
 - [Vite](https://vitejs.dev/) — ambiente de desenvolvimento e build
 - **CSS Modules** — estilização modular, com escopo por componente
 - **CSS Custom Properties** — tokens de design (cores, espaçamentos, raios) compartilhados

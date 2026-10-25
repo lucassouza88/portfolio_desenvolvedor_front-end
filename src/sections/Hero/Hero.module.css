@@ -3,7 +3,9 @@
   align-items: center;
   min-height: 100svh;
   padding: calc(var(--header-height) + 48px) 0 64px;
-  background: var(--color-bg);
+  background:
+    radial-gradient(circle at 85% 15%, var(--color-primary-soft), transparent 45%),
+    var(--color-bg);
 }
 
 .inner {
