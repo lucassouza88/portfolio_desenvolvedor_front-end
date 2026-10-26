@@ -13,8 +13,8 @@ https://meek-liger-ee53e2.netlify.app
 Precisa ter o Node.js instalado.
 
 ```bash
-git clone https://github.com/lucassouza88/NOME-DO-REPO.git
-cd NOME-DO-REPO
+git clone https://github.com/lucassouza88/portfolio_desenvolvedor_front-end.git
+cd portfolio_desenvolvedor_front-end
 npm install
 npm run dev
 ```
